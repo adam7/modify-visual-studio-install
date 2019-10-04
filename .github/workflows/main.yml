@@ -14,7 +14,3 @@ jobs:
         "C:\Program Files (x86)\Microsoft Visual Studio\Installer\vs_installer.exe" ^
         modify --installPath "C:\Program Files (x86)\Microsoft Visual Studio\2019\Enterprise" ^
         --add Microsoft.VisualStudio.Workload.Universal --passive --norestart
-    - name: Run a multi-line script
-      run: |
-        echo Add other actions to build,
-        echo test, and deploy your project.
