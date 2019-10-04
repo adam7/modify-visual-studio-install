@@ -10,8 +10,5 @@ jobs:
     steps:
     - uses: actions/checkout@v1
     - name: Modify visual studio install
-      run: |
-        & "C:\Program Files (x86)\Microsoft Visual Studio\Installer\vs_installer.exe" ^
-        modify --installPath "C:\Program Files (x86)\Microsoft Visual Studio\2019\Enterprise" ^
-        --add Microsoft.VisualStudio.Workload.Universal --passive --norestart
+      run: & "C:\Program Files (x86)\Microsoft Visual Studio\Installer\vs_installer.exe" modify --installPath "C:\Program Files (x86)\Microsoft Visual Studio\2019\Enterprise" --add Microsoft.VisualStudio.Workload.Universal --passive --norestart
       shell: pwsh
